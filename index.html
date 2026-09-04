@@ -5,7 +5,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lukman Tailwind Portfolio</title>
-        <link rel="stylesheet" href="./output.css">
+        <style>
+            body {
+                visibility: hidden;
+            }
+        </style>
+
+        <link rel="stylesheet" href="./output.css" onload="document.body.style.visibility='visible'">
     </head>
 
     <body>
@@ -42,7 +48,7 @@
                 <h1 class="font-serif text-6xl md:text-8xl lg:text-[7rem] font-bold mb-10 animate-fade-in-up-1">
                     <p class="
                     text-(--text-1)"">Lukman</p>
-                    <p class="text-(--text-4)">Shaikh</p>
+                    <p class=" text-(--text-4)">Shaikh</p>
                 </h1>
 
                 <p class="text-(--text-2) text-lg md:text-xl max-w-xl mb-10 animate-fade-in-up-2">I build thoughtful,
@@ -162,7 +168,8 @@
             <div>
                 <div class=" grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
 
-                    <article class=" group border border-(--border) rounded-2xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 hover:border-white/30 ">
+                    <article
+                        class=" group border border-(--border) rounded-2xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 hover:border-white/30 ">
                         <div
                             class=" relative aspect-video flex items-center justify-center bg-linear-to-tr from-blue-950 via-slate-900 to-neutral-900">
                             <p class="text-3xl font-mono text-blue-800/50 font-bold ">{"db"}</p>
@@ -207,7 +214,8 @@
                         </div>
                     </article>
 
-                    <article class=" group border border-(--border) rounded-2xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 hover:border-white/30">
+                    <article
+                        class=" group border border-(--border) rounded-2xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 hover:border-white/30">
                         <div
                             class=" relative aspect-video flex items-center justify-center bg-linear-to-tr from-emerald-950 via-teal-900/40 to-neutral-900">
                             <p class="text-3xl font-mono text-emerald-800/50">{"db"}</p>
@@ -232,7 +240,8 @@
                                     Mobile</p>
 
                             </div>
-                            <p class="mb-3 text-sm text-(--text-3)">A personal finance tracker with smart categorization, recurring budgets, and insightful weekly spending reports.
+                            <p class="mb-3 text-sm text-(--text-3)">A personal finance tracker with smart
+                                categorization, recurring budgets, and insightful weekly spending reports.
 
                             </p>
 
@@ -240,11 +249,11 @@
                                 <p
                                     class=" text-sm text-(--text-3) px-2 py-0.5 border border-(--border) rounded bg-(--surface-solid)">
                                     Next.js
-</p>
+                                </p>
                                 <p
                                     class=" text-sm text-(--text-3) px2 py-0.5 border border-(--border) rounded bg-(--surface-solid)">
                                     Prisma
-</p>
+                                </p>
                                 <p
                                     class=" text-sm text-(--text-3) px2 py-0.5 border border-(--border) rounded bg-(--surface-solid)">
                                     Stripe</p>
@@ -252,7 +261,8 @@
                         </div>
                     </article>
 
-                    <article class=" group border border-(--border) rounded-2xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 hover:border-white/30">
+                    <article
+                        class=" group border border-(--border) rounded-2xl overflow-hidden hover:-translate-y-1.5 transition-all duration-300 hover:border-white/30">
                         <div
                             class=" relative aspect-video flex items-center justify-center bg-linear-to-tr from-blue-950 via-slate-900 to-neutral-900">
                             <p class="text-3xl font-mono text-blue-800/50 font-bold ">{"db"}</p>
@@ -277,7 +287,8 @@
                                     Open Source</p>
 
                             </div>
-                            <p class="mb-3 text-sm text-(--text-3)">A headless CMS with a block-based editor, media library, and a fully type-safe content API built on Zod schemas.
+                            <p class="mb-3 text-sm text-(--text-3)">A headless CMS with a block-based editor, media
+                                library, and a fully type-safe content API built on Zod schemas.
 
 
 
@@ -300,37 +311,40 @@
             </div>
         </section>
 
-                <section class="border-t border-(--border) py-20">
+        <section class="border-t border-(--border) py-20">
 
 
             <div class="max-w-16xl mx-auto px-6">
                 <h2 class="uppercase text-(--text-3) text-xs tracking-widest mb-4">
                     Career
                 </h2>
-                </div>
+            </div>
 
-                <div class=" max-w-6xl mx-auto px-10">
-                    <h3 class="font-serif text-2xl mb-10">Experience</h3>
+            <div class=" max-w-6xl mx-auto px-10">
+                <h3 class="font-serif text-2xl mb-10">Experience</h3>
 
-                    <div class="border-l border-(--border)">
-                        <div class="relative mb-8">
-                        <div class=" -left-1 top-2 absolute border-2 border-(--accent) rounded-full w-2 h-2 bg-(--surface)"></div>
-                        
+                <div class="border-l border-(--border)">
+                    <div class="relative mb-8">
+                        <div
+                            class=" -left-1 top-2 absolute border-2 border-(--accent) rounded-full w-2 h-2 bg-(--surface)">
+                        </div>
+
 
                         <div class="pl-12">
                             <div class="flex flex-col md:flex-row justify-between mb-3 gap-2">
                                 <div>
                                     <h3>Senior Frontend Developer</h3>
-                                <p class="font-light text-(--text-2)">Stripe</p>
+                                    <p class="font-light text-(--text-2)">Stripe</p>
                                 </div>
                                 <div>
-                                    <p
-                                    class="text-xs font-mono text-(--text-4)">
-                                    2023 - Present</p>
+                                    <p class="text-xs font-mono text-(--text-4)">
+                                        2023 - Present</p>
                                 </div>
 
                             </div>
-                            <p class="mb-3 text-sm text-(--text-3)">Led the redesign of the Stripe Dashboard's reporting surface, improving performance by 40% and collaborating with a cross-functional team of 8 engineers and 2 designers across 3 timezones.
+                            <p class="mb-3 text-sm text-(--text-3)">Led the redesign of the Stripe Dashboard's reporting
+                                surface, improving performance by 40% and collaborating with a cross-functional team of
+                                8 engineers and 2 designers across 3 timezones.
 
                             </p>
 
@@ -349,31 +363,34 @@
                     </div>
 
                     <div class="relative mb-8">
-                        <div class=" -left-1 top-2 absolute border-2 border-(--border) rounded-full w-2 h-2 bg-(--surface)"></div>
-                        
+                        <div
+                            class=" -left-1 top-2 absolute border-2 border-(--border) rounded-full w-2 h-2 bg-(--surface)">
+                        </div>
+
 
                         <div class="pl-12">
                             <div class="flex flex-col md:flex-row justify-between mb-3 gap-2">
                                 <div>
                                     <h3>Full Stack Developer
-</h3>
-                                <p class="font-light text-(--text-2)">Vercel</p>
+                                    </h3>
+                                    <p class="font-light text-(--text-2)">Vercel</p>
                                 </div>
                                 <div>
-                                    <p
-                                    class="text-xs font-mono text-(--text-4)">
-                                    2021 - 2023</p>
+                                    <p class="text-xs font-mono text-(--text-4)">
+                                        2021 - 2023</p>
                                 </div>
 
                             </div>
-                            <p class="mb-3 text-sm text-(--text-3)">Built and maintained key features of the Vercel platform, including the deployment pipeline UI, team management dashboard, and analytics integrations serving 2M+ developers.
+                            <p class="mb-3 text-sm text-(--text-3)">Built and maintained key features of the Vercel
+                                platform, including the deployment pipeline UI, team management dashboard, and analytics
+                                integrations serving 2M+ developers.
                             </p>
 
                             <div class="flex gap-2 flex-wrap">
                                 <p
                                     class=" text-sm text-(--text-3) px-2 py-0.5 border border-(--border) rounded bg-(--surface-solid)">
                                     Next.js
-</p>
+                                </p>
                                 <p
                                     class=" text-sm text-(--text-3) px2 py-0.5 border border-(--border) rounded bg-(--surface-solid)">
                                     PostgreSQL</p>
@@ -385,25 +402,28 @@
                     </div>
 
                     <div class="relative mb-8">
-                        <div class=" -left-1 top-2 absolute border-2 border-(--border) rounded-full w-2 h-2 bg-(--surface)"></div>
-                        
+                        <div
+                            class=" -left-1 top-2 absolute border-2 border-(--border) rounded-full w-2 h-2 bg-(--surface)">
+                        </div>
+
 
                         <div class="pl-12">
                             <div class="flex flex-col md:flex-row justify-between mb-3 gap-2">
                                 <div>
                                     <h3>Junior Web Developer
-</h3>
-                                <p class="font-light text-(--text-2)">Freelance</p>
+                                    </h3>
+                                    <p class="font-light text-(--text-2)">Freelance</p>
                                 </div>
                                 <div>
-                                    <p
-                                    class="text-xs font-mono text-(--text-4)">
-                                    2019 - 2021
-</p>
+                                    <p class="text-xs font-mono text-(--text-4)">
+                                        2019 - 2021
+                                    </p>
                                 </div>
 
                             </div>
-                            <p class="mb-3 text-sm text-(--text-3)">Delivered 20+ websites and web apps for small businesses and early-stage startups, covering brand identity, frontend UI, and backend integrations with payment providers and CRMs.
+                            <p class="mb-3 text-sm text-(--text-3)">Delivered 20+ websites and web apps for small
+                                businesses and early-stage startups, covering brand identity, frontend UI, and backend
+                                integrations with payment providers and CRMs.
 
 
 
@@ -413,7 +433,7 @@
                                 <p
                                     class=" text-sm text-(--text-3) px-2 py-0.5 border border-(--border) rounded bg-(--surface-solid)">
                                     HTML/CSS
-</p>
+                                </p>
                                 <p
                                     class=" text-sm text-(--text-3) px2 py-0.5 border border-(--border) rounded bg-(--surface-solid)">
                                     JavaScript</p>
@@ -434,27 +454,31 @@
                 <h2 class="uppercase text-(--text-3) text-xs tracking-widest mb-4">
                     Get In Touch
                 </h2>
-                </div>
+            </div>
 
-                <div class=" max-w-6xl mx-auto px-10">
-                    <div>
-                   <div>
-                     <h3 class="font-serif text-3xl">Have a project?
-                     <h3 class="font-serif text-3xl text-(--text-4) mb-6">Let's talk.</h3>
-                   </div>
-                   <div>
-                    <p class="text-(--text-3)">Currently open to freelance contracts and full-time opportunities. I respond within 24 hours.</p>
-                </div>
-
+            <div class=" max-w-6xl mx-auto px-10">
                 <div>
-                    <a href="" class="flex w-full border border-(--border) rounded-xl bg-(--surface-solid) p-3 items-center gap-3">
-                        <svg class="w-10 h-10 text-(--accent bg-(--accent-dim) p-2 rounded-lg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-             </svg>
-             <div class="flex-1 text-sm">
-                <p class="text-(--text-4)">Email</p>
-                <p class="text-(--text-1)">Shaikhlukman899@gmail.com</p>
-             </div>
+                    <div>
+                        <h3 class="font-serif text-3xl">Have a project?
+                            <h3 class="font-serif text-3xl text-(--text-4) mb-6">Let's talk.</h3>
+                    </div>
+                    <div>
+                        <p class="text-(--text-3)">Currently open to freelance contracts and full-time opportunities. I
+                            respond within 24 hours.</p>
+                    </div>
+
+                    <div>
+                        <a href=""
+                            class="flex w-full border border-(--border) rounded-xl bg-(--surface-solid) p-3 items-center gap-3">
+                            <svg class="w-10 h-10 text-(--accent bg-(--accent-dim) p-2 rounded-lg" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <div class="flex-1 text-sm">
+                                <p class="text-(--text-4)">Email</p>
+                                <p class="text-(--text-1)">Shaikhlukman899@gmail.com</p>
+                            </div>
 
                             <svg class="w-3.5 h-3.5 text-(--text-3)" fill="none" stroke="currentColor"
                                 viewBox="0 0 24 24">
@@ -477,16 +501,22 @@
 
                             <a href=""
                                 class="flex flex-1 items-center gap-2 border border-(--border) px-3 py-2 rounded-xl text-(--text-3) font-light justify-center bg-(--surface-solid) ">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
 
                                 Linked In
-                        </a>
+                            </a>
 
                             <a href=""
                                 class="flex flex-1 items-center gap-2 border border-(--border) px-3 py-2 rounded-xl text-(--text-3) font-light justify-center bg-(--surface-solid) ">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.736l7.73-8.835L1.254 2.25H8.08l4.259 5.63 5.905-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
                                 Twitter
-                        </a>
+                            </a>
 
 
 
